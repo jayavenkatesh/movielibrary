@@ -3,7 +3,7 @@ const loggedInUser = sessionStorage.getItem('loggedInUser');
 
 // Function to search for movies and display results
 function searchMovies(query) {
-    fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${query}`)
+    fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${query}`)
         .then(response => response.json())
         .then(data => {
             const results = document.getElementById('searchResults');
