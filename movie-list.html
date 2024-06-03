@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie Lists</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Movie Lists</h1>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="index.html" id="logout">Log Out</a>
+      </nav>
+    </header>
+    <main>
+      <div id="movieLists"></div>
+      <form id="newListForm">
+        <input
+          type="text"
+          id="newListName"
+          placeholder="New List Name"
+          required
+        />
+        <select id="listVisibility">
+          <option value="private">Private</option>
+          <option value="public">Public</option>
+        </select>
+        <button type="submit">Create List</button>
+      </form>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
